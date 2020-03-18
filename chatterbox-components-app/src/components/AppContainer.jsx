@@ -8,6 +8,7 @@ class AppContainer extends Component
     constructor(props)
     {
         super(props);
+        // The message_queue property in state will hold all the messages being sent around.
         // Example of a message_queue with 2 message objects in it.
         // One sent to component 3 and one sent to component 6
         /*
@@ -23,6 +24,7 @@ class AppContainer extends Component
     }
 
     // Callback function for any child component to send message to another component
+    // Comp_from = name of sending component. comp_to = name of component to send msg to. message = The message to send
     sendMessage = (comp_from, comp_to, message) =>
     {
         // The method will create a new message object using the 'to' id passed in
