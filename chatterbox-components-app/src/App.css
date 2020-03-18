@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*=================================================*/
+/* Misc styles for this example. Some actually ended up using, some not*/
+/*=================================================*/
+
+.formGroup{
+  display: block;
+  margin: 1%;
+  padding: 1%;
+}
+
+.wrapper{
+  display:grid;
+  /* grid-template-columns:1fr 1fr 1fr;*/
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap:1em;
+  /* grid-auto-rows:100px; */
+  grid-auto-rows: minmax(100px, auto);
+  font-size: x-small;
+}
+
+.nested-component{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-auto-rows: 70px;
+  grid-gap:1em;
+
+}
+
+.wrapper > div{
+  background:#eee;
+  padding:1em;
+}
+.wrapper div {
+  background:#ddd;
+}
+
+.nested-component div{
+  border:#333 1px solid;
+  padding:1em;
+}
+
+input {
+  margin-left:.50rem;
+}
+
+.comp-name {
+  background-color: white;
+  font-weight: bold;
+}
+/*==============================*/
+.fade-out {
+  animation: fadeOut ease 8s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
